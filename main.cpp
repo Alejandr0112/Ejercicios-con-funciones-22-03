@@ -62,3 +62,28 @@ void factorial() {
     }
     cout << "Factorial: " << fact << endl;
 }
+
+void menu() {
+    cout << "\n--- CALCULADORA VIRTUAL! ---\n";
+    cout << "Bienvenido a tu calculadora virtual, emepcemos. \n";
+    cout << "1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\n5. Potencia\n6. Raiz Cuadrada\n7. Factorial\n8. Salir\n";
+    cout << "Seleccione una opcion: ";
+}
+
+int main() {
+    int opcion;
+    do {
+        menu();
+        cin >> opcion;
+        switch(opcion) {
+            case 1: sumar(); break;
+            case 2: restar(); break;
+            case 3: multiplicar(); break;
+            case 4: dividir(); break;
+            case 5: potencia(); break;
+            case 6: raiz_cuadrada(); break;
+            case 7: factorial(); break;
+        }
+    } while(opcion != 8);
+    return 0;
+}
