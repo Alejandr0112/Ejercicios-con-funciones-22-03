@@ -21,3 +21,14 @@ void multiplicar() {
     cin >> a >> b;
     cout << "Multiplicacion: " << (a * b) << endl;
 }
+
+void dividir() {
+    int a, b;
+    cout << "Ingrese dos numeros: ";
+    cin >> a >> b;
+    if (b == 0) {
+        cout << "No se puede dividir por cero" << endl;
+    } else {
+        cout << "Division: " << (a / b) << endl;
+    }
+}
