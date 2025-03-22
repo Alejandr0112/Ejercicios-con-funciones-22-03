@@ -52,3 +52,13 @@ void raiz_cuadrada() {
     }
     cout << "Raiz Cuadrada Aproximada: " << (raiz - 1) << endl;
 }
+
+void factorial() {
+    int n, fact = 1;
+    cout << "Ingrese un numero: ";
+    cin >> n;
+    for(int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    cout << "Factorial: " << fact << endl;
+}
