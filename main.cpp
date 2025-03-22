@@ -42,3 +42,13 @@ void potencia() {
     }
     cout << "Potencia: " << resultado << endl;
 }
+
+void raiz_cuadrada() {
+    int n, raiz = 0;
+    cout << "Ingrese un numero: ";
+    cin >> n;
+    while (raiz * raiz <= n) {
+        raiz++;
+    }
+    cout << "Raiz Cuadrada Aproximada: " << (raiz - 1) << endl;
+}
